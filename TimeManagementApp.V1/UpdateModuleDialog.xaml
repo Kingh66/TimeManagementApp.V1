@@ -1,0 +1,54 @@
+﻿<Window x:Class="TimeManagementApp.V1.UpdateModuleDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeManagementApp.V1"
+        mc:Ignorable="d"
+        Title="UpdateModuleDialog" Height="500" Width="800">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <!-- Module Code -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Module Code:" Width="150"/>
+                <TextBox x:Name="UpdateModuleCode" Width="250"/>
+            </StackPanel>
+
+            <!-- Module Name -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Module Name:" Width="150"/>
+                <TextBox x:Name="UpdateModuleName" Width="250"/>
+            </StackPanel>
+
+            <!-- Credits -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Credits:" Width="150"/>
+                <TextBox x:Name="UpdateModuleCredits" Width="250"/>
+            </StackPanel>
+
+            <!-- Class Hours Per Week -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Class Hours/Week:" Width="150"/>
+                <TextBox x:Name="UpdateClassHoursPerWeek" Width="250"/>
+            </StackPanel>
+
+            <!-- Number of Weeks -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Number of Weeks:" Width="150"/>
+                <TextBox x:Name="UpdateNumWeeks" Width="250"/>
+            </StackPanel>
+
+            <!-- Date -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Date:" Width="150"/>
+                <DatePicker x:Name="UpdateDate" Width="250"/>
+            </StackPanel>
+
+            <!-- Update Button -->
+            <Button Content="Update" Width="100" Height="30" HorizontalAlignment="Center" Click="UpdateButton_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
